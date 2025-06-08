@@ -135,6 +135,44 @@
             color: #00aaff;
         }
 
+        .wireframe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      background-color: white;
+      padding: 24px;
+    }
+    .wireframe-box {
+      border: 1px solid #d3d3d3;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background: #e7e9ed;
+      position: relative;
+      padding-top: 32px;
+    }
+    .wireframe-box.wide {
+      grid-column: span 2;
+    }
+    .wireframe-label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #36a2eb;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      padding: 8px;
+      font-size: 1rem;
+    }
+    .wireframe-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      padding: 16px;
+    }
+
         footer {
             background: #333;
             color: #fff;
@@ -166,7 +204,7 @@
     <header>
         <h1>Tarannum Begum</h1>
         <p>Data Analyst & Power BI Developer</p>
-        <p>Reading, UK | tarannum.dxb16@gmail.com | <a href="https://www.linkedin.com/in/tarannumb/]"
+        <p>Reading, UK | tarannum.dxb16@gmail.com | <a href="https://www.linkedin.com/in/tarannumb/"
                 style="color: #fff;">LinkedIn</a></p>
     </header>
     <nav>
@@ -216,7 +254,7 @@
                     approval/rejection rates, and delinquency trends using Oracle SQL and Temenos T24 data. Implemented
                     DAX measures for KPIs like customer spend patterns and fraud detection.</p>
                 <!-- Replace with actual screenshot or placeholder -->
-                <img src="https://via.placeholder.com/300x200?text=Credit+Card+Dashboard" alt="Credit Card Dashboard">
+                <img src="energy/risk-region.png" alt="Risk Levels By Region ">
             </div>
             <div class="project">
                 <h3>IT Service Incident Dashboard - Nestlé</h3>
@@ -234,6 +272,37 @@
             </div>
         </div>
     </section>
+     <!-- Wireframe Visualizations Section -->
+  <section id="wireframes">
+    <h2>Wireframe Visualizations</h2>
+    <div class="wireframe-grid">
+      <!-- KPI: Total Projects -->
+      <div class="wireframe-box">
+        <div class="wireframe-label">KPI: Total Projects</div>
+        <img src="kpi_total_projects.png" alt="KPI: Total Projects (10,000)">
+      </div>
+      <!-- KPI: Total Cost -->
+      <div class="wireframe-box">
+        <div class="wireframe-label">KPI: Total Cost</div>
+        <img src="kpi_total_cost.png" alt="KPI: Total Cost (£25.2B)">
+      </div>
+      <!-- KPI: % Projects Over Budget -->
+      <div class="wireframe-box">
+        <div class="wireframe-label">KPI: % Projects Over Budget</div>
+        <img src="kpi_over_budget.png" alt="KPI: % Projects Over Budget (48.7%)">
+      </div>
+      <!-- KPI: % High Risk Projects -->
+      <div class="wireframe-box">
+        <div class="wireframe-label">KPI: % High Risk Projects</div>
+        <img src="kpi_high_risk.png" alt="KPI: % High Risk Projects (35.1%)">
+      </div>
+      <!-- Treemap: Spend by Project Type -->
+      <div class="wireframe-box wide">
+        <div class="wireframe-label">Spend by Project Type</div>
+        <img src="treemap_spend.png" alt="Treemap: Spend by Project Type">
+      </div>
+    </div>
+  </section>
     <section id="contact">
         <h2>Contact</h2>
         <p>Interested in collaborating? Reach out via email at <a
