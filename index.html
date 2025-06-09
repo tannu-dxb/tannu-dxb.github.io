@@ -106,13 +106,14 @@
             margin-top: 1rem;
         }
 
-        .project h3 {
+        .project h4 {
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
         }
 
         .project p {
             font-family: 'Inter', sans-serif;
+            font-size: small;
         }
 
         .project img {
@@ -121,7 +122,7 @@
             border-radius: 5px;
             display: block;
         }
-        
+
         .sub-skill {
             font-size: small;
         }
@@ -138,48 +139,51 @@
         }
 
         .wireframe-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 24px;
-      background-color: white;
-      padding: 24px;
-      box-sizing: border-box;
-      max-width: 100%;
-      overflow-x: hidden;
-    }
-    .wireframe-box {
-      border: 1px solid #d3d3d3;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      background: #e7e9ed;
-      position: relative;
-      padding-top: 32px;
-      box-sizing: border-box;
-    }
-    .wireframe-box.wide {
-      grid-column: span 2;
-    }
-    .wireframe-label {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: #36a2eb;
-      color: white;
-      font-weight: bold;
-      text-align: center;
-      padding: 8px;
-      font-size: 1rem;
-    }
-    .wireframe-box img {
-      width: 100%;
-      height: auto;
-      display: block;
-      padding: 16px;
-      box-sizing: border-box;
-      margin-top: 0.5rem;
-    }
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            background-color: white;
+            padding: 24px;
+            box-sizing: border-box;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        .wireframe-box {
+            border: 1px solid #d3d3d3;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            background: #e7e9ed;
+            position: relative;
+            padding-top: 32px;
+            box-sizing: border-box;
+        }
+
+        .wireframe-box.wide {
+            grid-column: span 2;
+        }
+
+        .wireframe-label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #36a2eb;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 1rem;
+        }
+
+        .wireframe-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            padding: 16px;
+            box-sizing: border-box;
+            margin-top: 0.5rem;
+        }
 
         footer {
             background: #333;
@@ -190,7 +194,8 @@
             font-family: 'Inter', sans-serif;
         }
 
-        @media (max-width: 600px) {
+
+        @media (max-width: 768px) {
             header h1 {
                 font-size: 1.8rem;
             }
@@ -204,28 +209,33 @@
             .projects-grid {
                 grid-template-columns: 1fr;
             }
-        }
 
-        
-    @media (max-width: 768px) {
-      .wireframe-grid {
-        grid-template-columns: 1fr;
-        padding: 16px;
-      }
-      .wireframe-box.wide {
-        grid-column: span 1;
-      }
-      .wireframe-box {
-        max-width: 100%;
-      }
-      .wireframe-box img {
-        max-width: 100%;
-        height: auto;
-      }
-      section {
-        padding: 24px 8px;
-      }
-    }
+            .wireframe-grid {
+                grid-template-columns: 1fr;
+                padding: 16px;
+            }
+
+            .wireframe-box.wide {
+                grid-column: span 1;
+            }
+
+            .wireframe-box {
+                max-width: 100%;
+            }
+
+            .wireframe-box img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            section {
+                padding: 24px 8px;
+            }
+
+            nav {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -278,53 +288,82 @@
         <h2>Projects</h2>
         <div class="projects-grid">
             <div class="project">
-                <h3>Credit Card Dashboard - Emirates Bank</h3>
-                <p>Developed an executive Power BI dashboard to track credit card application volumes,
-                    approval/rejection rates, and delinquency trends using Oracle SQL and Temenos T24 data. Implemented
-                    DAX measures for KPIs like customer spend patterns and fraud detection.</p>
+                <h4>Projects Cost & Timeline Analysis - Energy Company</h4>
+                <p>Developed a comprehensive Power BI dashboard to analyze and monitor procurement data for energy
+                    infrastructure projects, encompassing over 700,000 records from azure blob file. The
+                    report featured interactive visuals, KPIs, and filters to track project timelines, equipment types,
+                    categories (Transmission/Distribution), costs in GBP, and risk levels. Leveraged Power Query for
+                    data transformation and DAX for custom measures such as project duration, overdue status, and risk
+                    segmentation. Implemented slicers, drill-downs, and advanced navigation using bookmarks and buttons
+                    for seamless user experience. The solution provided with actionable insights into budget control,
+                    risk mitigation, and project health monitoring, enabling
+                    better decision-making and operational efficiency.</p>
             </div>
             <div class="project">
-                <h3>IT Service Incident Dashboard - Nestlé</h3>
-                <p>Built a Power BI dashboard to visualize service incident trends and SLA compliance, reducing issue
-                    resolution time by 30%. Automated data pipelines using Power Query and integrated ServiceNow data
-                    for real-time insights.</p>
+                <h4>IT Service Desk Incident Dashboard - Food Company</h4>
+                <p>Designed and developed a comprehensive Power BI dashboard to monitor and analyze IT service desk
+                    incidents, focusing on SLA compliance and operational efficiency. The dashboard provided real-time
+                    insights into
+                    daily incident volume, severity levels (P1, P2, P3), and assignments by team or individual. Included
+                    visual breakdowns of incident trends, status progression (open, in-progress, resolved), and
+                    categorized views of Change Requests (CRs), Problem Records (PBIs), and standard incidents. Enabled
+                    the service delivery team to identify bottlenecks, improve response times, and ensure SLA adherence
+                    through clear KPI indicators, interactive charts, and actionable tables.</p>
             </div>
             <div class="project">
-                <h3>Retail Sales Analysis - Liquidchip</h3>
-                <p>Created a scalable Power BI reporting suite for retail clients, optimizing tabular data models and
-                    using Azure Data Factory for ETL processes. Enhanced decision-making with interactive visualizations
-                    like maps and scatter plots.</p>
+                <h4>Credit Card Application & Usage - Emirates Bank</h4>
+                <p>Designed and delivered an executive Power BI dashboard to track credit card application volumes,
+                    approval/rejection rates, and delinquency trends using SQL Server as the backend source. Transformed
+                    and modeled data with Power Query and built a semantic layer with calculated columns and DAX
+                    measures to derive KPIs such as average spend per customer, fraud risk flags, and delinquency
+                    ratios.
+
+                    Performed temporal analysis to identify seasonal sales peaks and high card utilization periods,
+                    enabling targeted cashback campaigns. Used trend forecasting and clustering techniques to predict
+                    application surges and customer engagement windows, increasing credit card adoption and usage.
+                    Integrated drill-through reports and dynamic visuals to support stakeholder decision-making.</p>
             </div>
         </div>
     </section>
-     <!-- Wireframe Visualizations Section -->
-  <section id="wireframes">
-    <h2>Visualizations Wireframes</h2>
-    <div class="wireframe">
-    <div class="wireframe-grid">
-      <div class="wireframe-box">
-        <div class="wireframe-label">Project Status</div>
-        <img src="energy/proj-status.png" alt="Project Status">
-      </div>
-      <div class="wireframe-box">
-        <div class="wireframe-label">Cost vs Budget</div>
-        <img src="energy/cost-budget.png" alt="Cost vs Budget">
-      </div>
-      <div class="wireframe-box">
-        <div class="wireframe-label">Risk</div>
-        <img src="energy/risk.png" alt="Risk">
-      </div>
-      <div class="wireframe-box">
-        <div class="wireframe-label">Risk Levels by Region</div>
-        <img src="energy/risk-region.png" alt="Risk Levels by Region">
-      </div>
-      <div class="wireframe-box wide">
-        <div class="wireframe-label">Cost over time</div>
-        <img src="energy/cost-over-time.png" alt="Cost over Time">
-      </div>
-    </div>
-</div>
-  </section>
+    <section id="wireframes">
+        <h2>Visualizations Wireframes</h2>
+        <div class="wireframe">
+            <div class="wireframe-grid">
+                <div class="wireframe-box">
+                    <div class="wireframe-label">Project Status</div>
+                    <img src="energy/proj-status.png" alt="Project Status">
+                </div>
+                <div class="wireframe-box">
+                    <div class="wireframe-label">Cost vs Budget</div>
+                    <img src="energy/cost-budget.png" alt="Cost vs Budget">
+                </div>
+                <div class="wireframe-box">
+                    <div class="wireframe-label">Risk</div>
+                    <img src="energy/risk.png" alt="Risk">
+                </div>
+                <div class="wireframe-box">
+                    <div class="wireframe-label">Risk Levels by Region</div>
+                    <img src="energy/risk-region.png" alt="Risk Levels by Region">
+                </div>
+                <div class="wireframe-box">
+                    <div class="wireframe-label">Cost over time</div>
+                    <img src="energy/cost-over-time.png" alt="Cost over Time">
+                </div>
+                <div class="wireframe-box">
+                    <div class="wireframe-label">Incident Volume</div>
+                    <img src="ITSC/incident-vol.png" alt="Incident Volume">
+                </div>
+                <div class="wireframe-box">
+                    <div class="wireframe-label">Incident Forecast</div>
+                    <img src="ITSC/incident-forecast.png" alt="Incident Forecaste">
+                </div>
+                <div class="wireframe-box">
+                    <div class="wireframe-label">Incident Categories</div>
+                    <img src="ITSC/incident-cat.png" alt="Incident Categories">
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="contact">
         <h2>Contact</h2>
         <p>Interested in collaborating? Reach out via email at <a
